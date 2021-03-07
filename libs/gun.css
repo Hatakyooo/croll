@@ -1,0 +1,118 @@
+/*css仅供参考，可根据需求自行设置*/
+
+
+/*关键*/
+
+.gun-wrap {
+    overflow: hidden;
+}
+
+
+/*wrap1大小 这里设为fullpage*/
+
+html,
+body,
+.wrap1,
+.content1,
+.gun-page {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*横向滚动模式，设容器为flex或者float*/
+
+.content-l {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.page-l {
+    flex: none;
+}
+
+
+/*设置wrap2大小*/
+
+.wrap2 {
+    width: 50%;
+    height: 50%;
+    transform: translate(50%, 20%);
+}
+
+.content2,
+.gun-page2 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*导航按钮式样 设为fixed*/
+
+.gun-nav {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gun-li {
+    list-style-type: none;
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.gun-li.on {
+    background: orange;
+}
+
+
+/*个性化css*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.page1 {
+    background: palegoldenrod;
+}
+
+.page2 {
+    background: palegreen;
+}
+
+.page3 {
+    background: palevioletred;
+}
+
+.page4 {
+    background: peru;
+}
+
+.page5 {
+    background: pink;
+}
+
+.intro {
+    padding-top: 5%;
+    text-align: center;
+}
+
+.intro>* {
+    padding: 5px;
+}
+
+.gun-page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
